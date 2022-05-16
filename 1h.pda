@@ -1,0 +1,4 @@
+start: q0
+accepting: {q1}
+
+q0 (_,_ -> $,q1)

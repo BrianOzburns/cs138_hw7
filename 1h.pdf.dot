@@ -1,0 +1,34 @@
+digraph {
+  node [shape=point]; __start;
+  node [shape = circle]; q0;
+  node [shape = doublecircle]; q1;
+  node [shape = circle]; q2;
+  node [shape = circle]; q3;
+  node [shape = circle]; q4;
+  node [shape = circle]; q5;
+  node [shape = circle]; q6;
+  node [shape = circle]; q7;
+  node [shape = circle]; q8;
+  node [shape = circle]; q9;
+  node [shape = circle]; q10;
+  node [shape = circle]; q11;
+
+  __start -> q0 [arrowhead = empty];
+  q0 -> q2 [label = "ε,ε->$"];
+  q2 -> q2 [label = "a,ε->5"];
+  q2 -> q3 [label = "b,ε->5"];
+  q2 -> q4 [label = "c,ε->5"];
+  q2 -> q5 [label = "#,ε->ε"];
+  q3 -> q2 [label = "ε,ε->5"];
+  q4 -> q6 [label = "ε,ε->5"];
+  q5 -> q5 [label = "a,5->ε"];
+  q5 -> q8 [label = "b,5->ε"];
+  q5 -> q9 [label = "c,5->ε"];
+  q5 -> q1 [label = "ε,$->ε"];
+  q6 -> q7 [label = "ε,ε->5"];
+  q7 -> q3 [label = "ε,ε->5"];
+  q8 -> q5 [label = "ε,5->ε"];
+  q9 -> q10 [label = "ε,5->ε"];
+  q10 -> q11 [label = "ε,5->ε"];
+  q11 -> q8 [label = "ε,5->ε"];
+}
